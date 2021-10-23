@@ -1,0 +1,24 @@
+public class Instructor extends User {
+    private String institution;
+    private String teachLessons;
+
+    public Instructor() {
+
+    }
+
+    public String getInstitution() {
+        return institution;
+    }
+
+    public void setInstitution(String institution) {
+        this.institution = institution;
+    }
+
+    public String getTeachLessons() {
+        return teachLessons;
+    }
+
+    public void setTeachLessons(String teachLessons) {
+        this.teachLessons = teachLessons;
+    }
+}
