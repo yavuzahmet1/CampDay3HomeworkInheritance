@@ -1,0 +1,24 @@
+public class Student extends User{
+    private String locatedClass;
+    public String hasLessons;
+
+    public Student(){
+
+    }
+
+    public String getLocatedClass() {
+        return locatedClass;
+    }
+
+    public void setLocatedClass(String locatedClass) {
+        this.locatedClass = locatedClass;
+    }
+
+    public String getHasLessons() {
+        return hasLessons;
+    }
+
+    public void setHasLessons(String hasLessons) {
+        this.hasLessons = hasLessons;
+    }
+}
