@@ -1,0 +1,29 @@
+public class Main {
+
+    public static void main(String[] args) {
+        Instructor instructor = new Instructor();
+        instructor.setIdentityNumber("12345");
+        instructor.setFirstName("Engin");
+        instructor.setLastName("DEMIROG");
+        instructor.setStatus("Teacher");
+        instructor.setTeachLessons("Sertifikasyonlara sahip");
+        instructor.setInstitution("Kodlama IO");
+
+        Student student=new Student();
+        student.setIdentityNumber("23447");
+        student.setFirstName("Ahmet");
+        student.setLastName("AZİM");
+        student.setStatus("Student");
+        student.setHasLessons("Yazılım Geliştirici Yetiştirme Kampı (JAVA + REACT)");
+        student.setLocatedClass("Elemantary");
+
+        UserManager userManager = new UserManager();
+        userManager.add();
+
+        StudentManager studentManager=new StudentManager();
+        studentManager.add(student);
+
+        InstructorManager instructorManager=new InstructorManager();
+        instructorManager.add(instructor);
+    }
+}
